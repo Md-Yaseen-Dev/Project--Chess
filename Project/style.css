@@ -1,0 +1,36 @@
+body {
+
+    margin: 10px;
+    height: 100vh;
+    background-color: bisque;
+
+}
+
+.board {
+    margin: 48px;
+    width: 560px;
+    display: grid;
+    background-color:#444444;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0px;
+}
+
+.box {
+    height: 70px;
+    border: 0.01px solid black;
+}
+
+.box:nth-child(-2n+7),
+.box:nth-child(8)~.box:nth-child(-2n+16),  
+.box:nth-child(16)~.box:nth-child(-2n+23),  
+.box:nth-child(24)~.box:nth-child(-2n+32), 
+.box:nth-child(32)~.box:nth-child(-2n+39),
+.box:nth-child(40)~.box:nth-child(-2n+48),
+.box:nth-child(48)~.box:nth-child(-2n+55),
+.box:nth-child(56)~.box:nth-child(-2n+64)
+ {
+
+    background-color: white;
+
+}
+
